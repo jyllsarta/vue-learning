@@ -1,0 +1,13 @@
+
+#app
+  img.main_image src="/cal.png" v-bind:style="{filter: filter}"
+  input.slider type="range" v-model.number="blur"
+    | {{blur}}
+  input.slider type="range" v-model.number="brightness"
+    | {{brightness}}
+  input.slider type="range" v-model.number="saturate"
+    | {{saturate}}
+  input.slider type="range" v-model.number="hueRotate"
+    | {{hueRotate}}
+script src="https://unpkg.com/vue"
+= javascript_include_tag "match_illust"
